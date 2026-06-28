@@ -14,7 +14,7 @@ A mock LLM inference service that emits **all 6 OTel signals**: metrics, traces,
 
 - **OpenTelemetry traces** via OTLP gRPC → otel-collector:4317
   - Auto-instrumentation: FastAPI handler spans + outbound `requests` calls
-  - Manual spans: `embed-text`, `vector-search`, `generate-tokens` (deck §6)
+  - Manual spans: `embed-text`, `vector-search`, `generate-tokens` (deck §7)
 
 - **Structured JSON logs** via `structlog` → stdout → **Grafana Alloy** / OTel Collector → Loki
   - Every log line carries `trace_id`, `span_id`, `model`, `request_id`

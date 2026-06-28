@@ -1,5 +1,5 @@
 ## OpenTelemetry Collector — receivers / processors / exporters
-## Anchor: deck §6 (sampling math + semantic conventions).
+## Anchor: deck §7 (sampling math + semantic conventions).
 
 receivers:
   otlp:

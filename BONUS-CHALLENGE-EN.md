@@ -107,7 +107,7 @@ Each provocation has 4 axes: **Audience** (who gets paged) · **Domain knowledge
 - **Application objective:** Pick 3 failure modes, inject each one with a chaos script, time how long until detection, how long until mitigation, then write a real postmortem with timeline, root cause, action items.
 - **Real-world output:**
   - `bonus/chaos/` — 3 scripts that break the system in 3 distinct ways (kill a service, fill disk, inject latency, poison data, exhaust quota, leak a secret, …)
-  - For each: `bonus/postmortems/incident-NN.md` with **timeline**, **detection** (time + which signal), **mitigation**, **root cause**, **action items** — 5 of the 5 sections from §9 of the deck
+  - For each: `bonus/postmortems/incident-NN.md` with **timeline**, **detection** (time + which signal), **mitigation**, **root cause**, **action items** — 5 of the 5 sections from §12 of the deck
   - 1 of the 3 incidents must result in a *real change* to your dashboards/alerts (i.e. the action item was implemented, not just listed)
   - Optional but encouraged: video screen-recording (~3 min) showing the alert fire, you opening the dashboard, finding the issue
 

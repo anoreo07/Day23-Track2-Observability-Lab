@@ -14,7 +14,7 @@ You will:
 - Configure **tail-sampling** in OTel Collector (keep all errors + 1% healthy)
 - Run **drift detection** (PSI / KL / KS) on a synthetic shifted dataset
 - Integrate metrics from prior days (16 cloud, 17 pipelines, 18 lakehouse, 19 vector store, 20 serving, 22 alignment)
-- *(bonus)* Operate the agent **you** built: **AgentOps** — agent spans + SLIs (loop / tool-error / cost-per-task), deck §18
+- *(bonus)* Operate the agent **you** built: **AgentOps** — agent spans + SLIs (loop / tool-error / cost-per-task), deck §13–14 + §19
 
 ## Before you start
 
@@ -57,7 +57,7 @@ make down                  # stop (preserves data)
 
 ## Slide → Track mapping
 
-> Lecture deck (2026 cut) = **20 sections**: Part A observability §1–14, Part B Ops §15–19 (Ops-Trinity · MLOps · LLMOps · AgentOps · **AIOps**), §20 demo.
+> Lecture deck (2026 cut) = **21 sections**: Part A observability §1–15 (incl. **§14 Harness, Loop & Self-Improvement Flywheel**), Part B Ops §16–20 (Ops-Trinity · MLOps · LLMOps · AgentOps · **AIOps**), §21 demo.
 
 | Deck section | Lab track |
 |---|---|
@@ -72,12 +72,13 @@ make down                  # stop (preserves data)
 | §10 AI-Specific: Drift & Eval                  | `04-drift-detection/` |
 | §11 Cost + FinOps                              | `02-prometheus-grafana/grafana/dashboards/cost-and-tokens.json` |
 | §12 Postmortems · On-Call · Compliance         | `submission/REFLECTION.md` |
-| §13 Agent Observability                        | reading · `BONUS-llm-native-obs/` |
-| §14 Experimentation · Shadow / Canary          | `04-drift-detection/` (advanced) |
-| §15–17 Ops Trinity · MLOps · LLMOps             | reading (Part B — conceptual) |
-| **§18 AgentOps (agent SLIs, span tree)**         | **`BONUS-agentops/`** |
-| §19 AIOps (AI for IT ops)                        | reading (Part B — conceptual) |
-| §20 Demo + Lab + Summary                       | `make demo` |
+| §13 Agent Observability (spans, SLIs)          | reading · `BONUS-agentops/` · `BONUS-llm-native-obs/` |
+| **§14 Harness, Loop & Self-Improvement Flywheel** | **`BONUS-agentops/`** (harness telemetry · loop SLIs · observe→skill) |
+| §15 Experimentation · Shadow / Canary          | `04-drift-detection/` (advanced) |
+| §16–18 Ops Trinity · MLOps · LLMOps             | reading (Part B — conceptual) |
+| **§19 AgentOps Deepdive (pass^k, durable exec)** | **`BONUS-agentops/`** (reflection) |
+| §20 AIOps (AI for IT ops)                       | reading (Part B — conceptual) |
+| §21 Demo + Lab + Summary                       | `make demo` |
 
 ## What's NOT in the lab (and why)
 
@@ -114,7 +115,7 @@ Public GitHub URL + commits in `submission/screenshots/` and `submission/REFLECT
 ├── 05-integration/              ← scrapers/stubs for Days 16-22
 ├── BONUS-ebpf-profiling/        ← Pyroscope (Linux/WSL)
 ├── BONUS-llm-native-obs/        ← self-hosted Langfuse
-├── BONUS-agentops/             ← AgentOps: agent spans + SLIs (deck §18)
+├── BONUS-agentops/             ← AgentOps: agent spans + SLIs (deck §14 + §19)
 ├── scripts/                     ← verify.py, trigger-alert.sh, lint-dashboards.py
 └── submission/                  ← REFLECTION.md + screenshots/
 ```

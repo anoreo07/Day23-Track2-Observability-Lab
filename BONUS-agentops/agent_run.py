@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AgentOps for the Day-23 lab  (deck §18 — AgentOps Deepdive).
+AgentOps for the Day-23 lab  (deck §14 Harness/Loop/Flywheel + §19 AgentOps Deepdive).
 
 Operate the kind of thing YOU built (Day-3 ReAct e-commerce agent, Day-9 multi-agent):
 a multi-step, tool-using agent. This harness runs a small MOCK agent over a few
@@ -119,7 +119,7 @@ def run_task(task, tracer):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="AgentOps harness (deck §18)")
+    ap = argparse.ArgumentParser(description="AgentOps harness (deck §14/§19)")
     ap.add_argument("--out", default="agentops-report.json")
     ap.add_argument("--real-llm", action="store_true", help="(stub) use OPENAI_API_KEY policy instead of mock plans")
     args = ap.parse_args()

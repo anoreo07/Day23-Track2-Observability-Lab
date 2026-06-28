@@ -107,7 +107,7 @@ Mỗi provocation có 4 phần: **Audience** (ai bị page) · **Domain knowledg
 - **Application objective:** Chọn 3 failure modes, inject mỗi cái bằng chaos script, đo time-to-detection, time-to-mitigation, rồi viết 1 postmortem thật với timeline, root cause, action items.
 - **Real-world output:**
   - `bonus/chaos/` — 3 scripts phá system theo 3 cách khác nhau (kill service, fill disk, inject latency, poison data, exhaust quota, leak secret, …)
-  - Cho mỗi cái: `bonus/postmortems/incident-NN.md` với **timeline**, **detection** (thời điểm + signal nào), **mitigation**, **root cause**, **action items** — đủ 5/5 sections từ §9 của deck
+  - Cho mỗi cái: `bonus/postmortems/incident-NN.md` với **timeline**, **detection** (thời điểm + signal nào), **mitigation**, **root cause**, **action items** — đủ 5/5 sections từ §12 của deck
   - 1 trong 3 incidents phải dẫn tới *thay đổi thật* dashboard/alert (action item đã implement, không chỉ liệt kê)
   - Optional nhưng khuyến khích: video screen-record (~3 phút) cho thấy alert fire, bạn mở dashboard, tìm ra issue
 

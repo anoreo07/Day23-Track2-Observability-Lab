@@ -8,7 +8,7 @@ Scraping config, dashboards-as-code, and SLO burn-rate alerting.
 prometheus/
 ├── prometheus.yml          # main scrape config
 ├── rules/
-│   ├── slo-burn-rate.yml   # multi-window multi-burn-rate (deck §5)
+│   ├── slo-burn-rate.yml   # multi-window multi-burn-rate (deck §6)
 │   └── ai-quality.yml      # latency, error rate, drift gauge alerts
 alertmanager/
 └── alertmanager.yml        # severity routing → Slack
